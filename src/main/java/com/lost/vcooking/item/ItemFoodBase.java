@@ -11,6 +11,8 @@ public class ItemFoodBase extends ItemFood {
 	public ItemFoodBase(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
 		this.name = name;
+		setTranslationKey(name);
+		setRegistryName(name);
 	}
 	
 	public void registerItemModel() {
