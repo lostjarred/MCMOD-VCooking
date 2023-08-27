@@ -1,6 +1,9 @@
 package com.lost.vcooking;
 
+import com.lost.vcooking.proxy.CommonProxy;
+
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -28,4 +31,7 @@ public class VCooking {
 	public void postInit(FMLPostInitializationEvent event) {
 
 	}
+	
+	@SidedProxy(serverSide = "com.lost.vcooking.proxy.CommonProxy", clientSide= "com.lost.vcooking.proxy.ClientProxy")
+	public static CommonProxy proxy;
 }
