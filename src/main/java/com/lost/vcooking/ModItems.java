@@ -12,6 +12,7 @@ public class ModItems {
 	public static ItemBase FLOUR = new ItemBase("flour").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemFoodBase FLATBREAD = new ItemFoodBase("flatbread", 0, 0, false).setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase LOAFPAN = new ItemBase("loafpan").setCreativeTab(CreativeTabs.FOOD);
+	public static ItemBase DOUGH = new ItemBase("dough").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase FILLED_LOAFPAN = new ItemBase("filledloafpan").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase MIXING_BOWL = new ItemBase("mixingbowl").setCreativeTab(CreativeTabs.FOOD);
 	
@@ -21,6 +22,7 @@ public class ModItems {
 		registry.register(FLOUR);
 		registry.register(FLATBREAD);
 		registry.register(LOAFPAN);
+		registry.register(DOUGH);
 		registry.register(FILLED_LOAFPAN);
 		registry.register(MIXING_BOWL);
 	}
@@ -32,5 +34,6 @@ public class ModItems {
 		LOAFPAN.registerItemModel();
 		FILLED_LOAFPAN.registerItemModel();
 		MIXING_BOWL.registerItemModel();
+		DOUGH.registerItemModel();
 	}
 }
