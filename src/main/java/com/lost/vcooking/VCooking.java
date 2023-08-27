@@ -28,7 +28,7 @@ public class VCooking {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+		SmeltingRecipes.registersmeltingrecipes();
 	}
 	
 	@Mod.EventHandler
