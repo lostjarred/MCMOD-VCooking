@@ -2,6 +2,7 @@ package com.lost.vcooking.item;
 
 import com.lost.vcooking.VCooking;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemFood;
 
 public class ItemFoodBase extends ItemFood {
@@ -18,5 +19,10 @@ public class ItemFoodBase extends ItemFood {
 	public void registerItemModel() {
 		VCooking.proxy.registerItemRenderer(this, 0, name);
 	}
-
+	
+	@Override
+	public ItemFoodBase setCreativeTab(CreativeTabs tab) {
+		super.setCreativeTab(tab);
+		return this;
+	}
 }
