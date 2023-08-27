@@ -1,6 +1,7 @@
 package com.lost.vcooking;
 
 import com.lost.vcooking.item.ItemBase;
+import com.lost.vcooking.item.ItemBaseTool;
 import com.lost.vcooking.item.ItemFoodBase;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,8 +14,9 @@ public class ModItems {
 	public static ItemFoodBase FLATBREAD = new ItemFoodBase("flatbread", 0, 0, false).setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase LOAFPAN = new ItemBase("loafpan").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase DOUGH = new ItemBase("dough").setCreativeTab(CreativeTabs.FOOD);
-	public static ItemBase FILLED_LOAFPAN = new ItemBase("filledloafpan").setCreativeTab(CreativeTabs.FOOD);
+	public static ItemBase FILLED_LOAFPAN = (ItemBase) new ItemBase("filledloafpan").setCreativeTab(CreativeTabs.FOOD).setContainerItem(LOAFPAN);
 	public static ItemBase MIXING_BOWL = new ItemBase("mixingbowl").setCreativeTab(CreativeTabs.FOOD);
+	
 	
 	
 	public static void register(IForgeRegistry<Item> registry) {
