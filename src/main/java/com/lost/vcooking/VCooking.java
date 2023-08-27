@@ -1,6 +1,9 @@
 package com.lost.vcooking;
 
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid = VCooking.MODID, name = VCooking.NAME, version = VCooking.VERSION)
 public class VCooking {
@@ -10,4 +13,19 @@ public class VCooking {
 	
 	@Mod.Instance(MODID)
 	public static VCooking instance;
+	
+	@Mod.EventHandler
+	public void preInit(FMLPreInitializationEvent event) {
+		System.out.println(NAME + " is loading!");
+	}
+	
+	@Mod.EventHandler
+	public void init(FMLInitializationEvent event) {
+		
+	}
+	
+	@Mod.EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+
+	}
 }
