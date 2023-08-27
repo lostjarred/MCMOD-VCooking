@@ -44,12 +44,12 @@ public class VCooking {
 		
 		@SubscribeEvent
 		public static void registerItems(RegistryEvent.Register<Item> event) {
-			
+			ModItems.register(event.getRegistry());
 		}
 		
 		@SubscribeEvent
 		public static void registerItems(ModelRegistryEvent event) {
-			
+			ModItems.registerModels();
 		}
 		
 	}
