@@ -15,7 +15,7 @@ public class ModItems {
 	public static ItemBase LOAFPAN = new ItemBase("loafpan").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase DOUGH = new ItemBase("dough").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase FILLED_LOAFPAN = (ItemBase) new ItemBase("filledloafpan").setCreativeTab(CreativeTabs.FOOD).setContainerItem(LOAFPAN);
-	public static ItemBase MIXING_BOWL = new ItemBase("mixingbowl").setCreativeTab(CreativeTabs.FOOD);
+	public static ItemBaseTool MIXING_BOWL = new ItemBaseTool("mixingbowl").setCreativeTab(CreativeTabs.FOOD);
 	
 	
 	
