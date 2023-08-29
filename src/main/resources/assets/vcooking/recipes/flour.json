@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item":"minecraft:wheat"
+		},
+		{
+			"item":"vcooking:mortarpestile"
+		}
+	],
+	"result":{
+		"item":"vcooking:flour",
+		"count": 1
+	}
+}
