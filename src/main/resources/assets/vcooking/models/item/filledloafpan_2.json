@@ -2,6 +2,6 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "vcooking:items/loafpan",
-	"layer1": "minecraft:items/blaze_rod"
+	"layer1": "vcooking:items/loafpan_filled_cooked"
   }
 }
