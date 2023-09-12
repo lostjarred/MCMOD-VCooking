@@ -1,6 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "minecraft:items/iron_helmet"
+  	"layer0": "vcooking:items/loafpan",
+    "layer1": "vcooking:items/loafpan_filled_uncooked"
   }
 }
