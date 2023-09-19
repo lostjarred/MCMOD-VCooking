@@ -16,6 +16,13 @@ public class ItemFoodBase extends ItemFood {
 		setRegistryName(name);
 	}
 	
+	public ItemFoodBase(String name, int amount, float saturation) {
+		super(amount, saturation, false);
+		this.name = name;
+		setTranslationKey(name);
+		setRegistryName(name);
+	}
+	
 	public void registerItemModel() {
 		VCooking.proxy.registerItemRenderer(this, 0, name);
 	}
