@@ -29,6 +29,7 @@ public class VCooking {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		RecipeHandler.registerSmeltingRecipes();
+		OredictHandler.RegisterOreDicts();
 	}
 	
 	@Mod.EventHandler
