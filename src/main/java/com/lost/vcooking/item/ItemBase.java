@@ -23,4 +23,10 @@ public class ItemBase extends Item {
 		super.setCreativeTab(tab);
 		return this;
 	}
+	
+	public ItemBase setContainerItem(ItemBase containerItem)
+    {
+        super.setContainerItem((Item) containerItem);
+		return this;
+    }
 }
