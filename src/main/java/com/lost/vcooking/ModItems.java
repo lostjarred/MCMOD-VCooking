@@ -11,7 +11,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModItems {
 	
 	public static ItemBase FLOUR = new ItemBase("flour").setCreativeTab(CreativeTabs.FOOD);
-	public static ItemFoodBase FLATBREAD = new ItemFoodBase("flatbread", 3, 0.6f, false).setCreativeTab(CreativeTabs.FOOD);
+	public static ItemFoodBase FLATBREAD = new ItemFoodBase("flatbread", 3, 0.6f).setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase LOAFPAN = new ItemBase("loafpan").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase DOUGH = new ItemBase("dough").setCreativeTab(CreativeTabs.FOOD);
 	public static ItemBase FILLED_LOAFPAN = (ItemBase) new ItemBase("filledloafpan").setCreativeTab(CreativeTabs.FOOD);
