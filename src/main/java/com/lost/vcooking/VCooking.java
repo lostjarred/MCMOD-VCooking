@@ -56,7 +56,7 @@ public class VCooking {
 		}
 		@SubscribeEvent
 	    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
-			RecipeHandler.removeRecipes( (IForgeRegistryModifiable) event.getRegistry() );
+			RecipeHandler.removeRecipes( (IForgeRegistryModifiable<IRecipe>) event.getRegistry() );
 	    }
 		
 	}
