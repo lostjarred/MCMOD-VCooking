@@ -2,7 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item":"vcooking:flour"
+			"type": "forge:ore_dict",
+			"ore": "itemFlour"
 		},
 		{
 			"item":"vcooking:mixingbowl"
