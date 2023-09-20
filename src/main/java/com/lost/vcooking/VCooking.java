@@ -3,6 +3,7 @@ package com.lost.vcooking;
 import com.lost.vcooking.proxy.CommonProxy;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +12,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.registries.IForgeRegistryModifiable;
 
 @Mod(modid = VCooking.MODID, name = VCooking.NAME, version = VCooking.VERSION)
 public class VCooking {
@@ -52,6 +54,10 @@ public class VCooking {
 		public static void registerItems(ModelRegistryEvent event) {
 			ModItems.registerModels();
 		}
+		@SubscribeEvent
+	    public static void registerRecipes(RegistryEvent.Register<IRecipe> event) {
+			RecipeHandler.removeRecipes( (IForgeRegistryModifiable) event.getRegistry() );
+	    }
 		
 	}
 }
