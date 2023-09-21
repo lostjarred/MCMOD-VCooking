@@ -15,7 +15,7 @@ public class RecipeHandler {
 		
 		public static void removeRecipes(IForgeRegistryModifiable<IRecipe> registry) {
 			System.out.println("Removing recipes");
-			System.out.println("Removing Bread recipe");
+			System.out.println("Removing Minecraft Bread recipe");
 			registry.remove(new ResourceLocation("minecraft:bread") );
 		}
 }
