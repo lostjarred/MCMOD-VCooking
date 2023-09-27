@@ -1,6 +1,7 @@
 package com.lost.vcooking;
 
 import com.lost.vcooking.item.ItemBase;
+import com.lost.vcooking.item.ItemBaseMeta;
 import com.lost.vcooking.item.ItemBaseTool;
 import com.lost.vcooking.item.ItemFoodBase;
 
@@ -20,6 +21,8 @@ public class ModItems {
 	public static ItemBaseTool MORTAR_PESTILE = new ItemBaseTool("mortarpestile").setCreativeTab(CreativeTabs.FOOD);
 	
 	
+	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(CreativeTabs.FOOD);
+	
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		System.out.println("registering items");
@@ -31,6 +34,7 @@ public class ModItems {
 		registry.register(MIXING_BOWL);
 		registry.register(FILLED_LOAFPAN_2);
 		registry.register(MORTAR_PESTILE);
+		registry.register(ITEMS);
 	}
 	
 	public static void registerModels() {
@@ -43,5 +47,6 @@ public class ModItems {
 		DOUGH.registerItemModel();
 		FILLED_LOAFPAN_2.registerItemModel();
 		MORTAR_PESTILE.registerItemModel();
+		ITEMS.registerItemModels();
 	}
 }
