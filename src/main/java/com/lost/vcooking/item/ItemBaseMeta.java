@@ -11,7 +11,7 @@ import net.minecraft.util.NonNullList;
 
 public class ItemBaseMeta extends ItemBase	{
 	
-	private static ArrayList<metaitem> items = Lists.newArrayList();
+	private static ArrayList<metaitem> metaitems = Lists.newArrayList();
 
 	public ItemBaseMeta(String name) {
 		super(name);
@@ -22,10 +22,10 @@ public class ItemBaseMeta extends ItemBase	{
 	public String getTranslationKey(ItemStack stack)
     {
 		int metadata = stack.getMetadata();
-		if (metadata > (items.size() - 1) ) {
+		if (metadata > (metaitems.size() - 1) ) {
 			return name + ".error";
 		} else {
-			return name + items.get(metadata).getName();
+			return name+ "." + metaitems.get(metadata).getName();
 		}
     }
 	
@@ -33,20 +33,27 @@ public class ItemBaseMeta extends ItemBase	{
     {
         if (this.isInCreativeTab(tab))
         {
-        	for (int i = 0; i < (items.size() - 1); i ++) {
+        	for (int i = 0; i < (metaitems.size()); i ++) {
+        		System.out.println("registering creative items");
         		items.add(new ItemStack(this, 1, i));
         	}
         }
     }
 	
 	public void registerItemModels() {
-		for (int i = 0; i < (items.size() - 1); i ++) {
-			VCooking.proxy.registerItemRenderer(this, i, items.get(i).getName());
+		for (int i = 0; i < (metaitems.size() - 1); i ++) {
+			VCooking.proxy.registerItemRenderer(this, i, metaitems.get(i).getName());
 		}
 	}
 	
+	@Override
+	public ItemBaseMeta setCreativeTab(CreativeTabs tab) {
+		super.setCreativeTab(tab);
+		return this;
+	}
+	
 	public ItemBaseMeta addMetaItem(String name) {
-		items.add( new metaitem(name) );
+		metaitems.add( new metaitem(name) );
 		return this;
 	}
 	
