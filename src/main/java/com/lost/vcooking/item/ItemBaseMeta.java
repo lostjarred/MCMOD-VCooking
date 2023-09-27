@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 import com.google.common.collect.Lists;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 
 public class ItemBaseMeta extends ItemBase	{
 	
@@ -26,8 +28,18 @@ public class ItemBaseMeta extends ItemBase	{
 		}
     }
 	
+	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items)
+    {
+        if (this.isInCreativeTab(tab))
+        {
+        	for (int i = 0; i < (items.size() - 1); i ++) {
+        		items.add(new ItemStack(this, 1, i));
+        	}
+        }
+    }
+	
 	public ItemBaseMeta addMetaItem(String name) {
-		items.add(new metaitem(name));
+		items.add( new metaitem(name) );
 		return this;
 	}
 	
