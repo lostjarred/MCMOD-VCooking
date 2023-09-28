@@ -11,17 +11,17 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModItems {
 	
-	public static ItemBase FLOUR = new ItemBase("flour").setCreativeTab(CreativeTabs.FOOD);
-	public static ItemFoodBase FLATBREAD = new ItemFoodBase("flatbread", 3, 0.6f).setCreativeTab(CreativeTabs.FOOD);
-	public static ItemBase LOAFPAN = new ItemBase("loafpan").setCreativeTab(CreativeTabs.FOOD);
-	public static ItemBase DOUGH = new ItemBase("dough").setCreativeTab(CreativeTabs.FOOD);
-	public static ItemBase FILLED_LOAFPAN = new ItemBase("filledloafpan").setCreativeTab(CreativeTabs.FOOD);
-	public static ItemBase FILLED_LOAFPAN_2 = new ItemBase("filledloafpan_2").setCreativeTab(CreativeTabs.FOOD).setContainerItem(LOAFPAN);
-	public static ItemBaseTool MIXING_BOWL = new ItemBaseTool("mixingbowl").setCreativeTab(CreativeTabs.FOOD);
-	public static ItemBaseTool MORTAR_PESTILE = new ItemBaseTool("mortarpestile").setCreativeTab(CreativeTabs.FOOD);
+	public static ItemBase FLOUR = new ItemBase("flour").setCreativeTab(VCooking.CREATIVETAB);
+	public static ItemFoodBase FLATBREAD = new ItemFoodBase("flatbread", 3, 0.6f).setCreativeTab(VCooking.CREATIVETAB);
+	public static ItemBase LOAFPAN = new ItemBase("loafpan").setCreativeTab(VCooking.CREATIVETAB);
+	public static ItemBase DOUGH = new ItemBase("dough").setCreativeTab(VCooking.CREATIVETAB);
+	public static ItemBase FILLED_LOAFPAN = new ItemBase("filledloafpan").setCreativeTab(VCooking.CREATIVETAB);
+	public static ItemBase FILLED_LOAFPAN_2 = new ItemBase("filledloafpan_2").setCreativeTab(VCooking.CREATIVETAB).setContainerItem(LOAFPAN);
+	public static ItemBaseTool MIXING_BOWL = new ItemBaseTool("mixingbowl").setCreativeTab(VCooking.CREATIVETAB);
+	public static ItemBaseTool MORTAR_PESTILE = new ItemBaseTool("mortarpestile").setCreativeTab(VCooking.CREATIVETAB);
 	
 	
-	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(CreativeTabs.FOOD);
+	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(VCooking.CREATIVETAB);
 	
 	
 	public static void register(IForgeRegistry<Item> registry) {

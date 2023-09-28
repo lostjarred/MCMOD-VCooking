@@ -2,6 +2,7 @@ package com.lost.vcooking;
 
 import com.lost.vcooking.proxy.CommonProxy;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -19,6 +20,8 @@ public class VCooking {
 	public static final String MODID = "vcooking";
 	public static final String NAME = "Vanilla Cooking";
 	public static final String VERSION = "0.1.0";
+	
+	public static final VCookingCreativeTab CREATIVETAB = new VCookingCreativeTab("vcooking");
 	
 	@Mod.Instance(MODID)
 	public static VCooking instance;
