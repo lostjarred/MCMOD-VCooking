@@ -34,7 +34,6 @@ public class ItemBaseMeta extends ItemBase	{
         if (this.isInCreativeTab(tab))
         {
         	for (int i = 0; i < (metaitems.size()); i ++) {
-        		System.out.println("registering creative items");
         		items.add(new ItemStack(this, 1, i));
         	}
         }
