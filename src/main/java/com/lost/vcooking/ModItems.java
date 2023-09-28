@@ -33,7 +33,10 @@ public class ModItems {
 			.addMetaItem("flatbread")
 			;
 	
-	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMeta("itemtools").setCreativeTab(VCooking.CREATIVETAB);
+	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMeta("itemtools").setCreativeTab(VCooking.CREATIVETAB)
+			.addMetaItem("mixingbowl")
+			.addMetaItem("mortarpestile")
+			;
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		System.out.println("registering items");
