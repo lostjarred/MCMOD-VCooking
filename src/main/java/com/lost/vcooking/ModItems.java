@@ -29,9 +29,11 @@ public class ModItems {
 			.addMetaItem("filledloafpan2")
 			;
 	
-	public static ItemBaseMeta ITEMSFOOD = new ItemBaseMeta("itemfoods");
+	public static ItemBaseMeta ITEMSFOOD = new ItemBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
+			.addMetaItem("flatbread")
+			;
 	
-	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMeta("itemtools");
+	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMeta("itemtools").setCreativeTab(VCooking.CREATIVETAB);
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		System.out.println("registering items");
