@@ -21,8 +21,13 @@ public class ModItems {
 	public static ItemBaseTool MORTAR_PESTILE = new ItemBaseTool("mortarpestile").setCreativeTab(VCooking.CREATIVETAB);
 	
 	
-	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(VCooking.CREATIVETAB);
-	
+	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(VCooking.CREATIVETAB)
+			.addMetaItem("flour")
+			.addMetaItem("loafpan")
+			.addMetaItem("dough")
+			.addMetaItem("filledloafpan")
+			.addMetaItem("filledloafpan2")
+			;
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		System.out.println("registering items");
