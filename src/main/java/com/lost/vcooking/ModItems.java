@@ -29,6 +29,10 @@ public class ModItems {
 			.addMetaItem("filledloafpan2")
 			;
 	
+	public static ItemBaseMeta ITEMSFOOD = new ItemBaseMeta("itemfoods");
+	
+	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMeta("itemtools");
+	
 	public static void register(IForgeRegistry<Item> registry) {
 		System.out.println("registering items");
 		registry.register(FLOUR);
