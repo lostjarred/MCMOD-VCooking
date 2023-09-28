@@ -41,7 +41,7 @@ public class ItemBaseMeta extends ItemBase	{
     }
 	
 	public void registerItemModels() {
-		for (int i = 0; i < (metaitems.size() - 1); i ++) {
+		for (int i = 0; i < (metaitems.size()); i ++) {
 			VCooking.proxy.registerItemRenderer(this, i, metaitems.get(i).getName());
 		}
 	}
