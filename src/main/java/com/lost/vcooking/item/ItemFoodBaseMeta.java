@@ -1,11 +1,19 @@
 package com.lost.vcooking.item;
 
+import java.util.ArrayList;
+
+import com.google.common.collect.Lists;
+
 public class ItemFoodBaseMeta extends ItemFoodBase {
 
+	private ArrayList<ItemFoodMeta> metaitems = Lists.newArrayList();
+	
 	public ItemFoodBaseMeta(String name, int amount, float saturation, boolean isWolfFood) {
 		super(name, 0, 0, false);
 		// TODO Auto-generated constructor stub
 	}
+	
+	
 	
 	class ItemFoodMeta {
 		String name;
