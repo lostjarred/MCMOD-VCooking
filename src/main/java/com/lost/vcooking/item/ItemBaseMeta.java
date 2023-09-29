@@ -33,14 +33,14 @@ public class ItemBaseMeta extends ItemBase	{
     {
         if (this.isInCreativeTab(tab))
         {
-        	for (int i = 0; i < (metaitems.size()); i ++) {
+        	for (int i = 0; i < metaitems.size(); i ++) {
         		items.add(new ItemStack(this, 1, i));
         	}
         }
     }
 	
 	public void registerItemModels() {
-		for (int i = 0; i < (metaitems.size()); i ++) {
+		for (int i = 0; i < metaitems.size(); i ++) {
 			VCooking.proxy.registerItemRenderer(this, i, metaitems.get(i).getName());
 		}
 	}
