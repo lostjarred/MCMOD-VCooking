@@ -2,6 +2,7 @@ package com.lost.vcooking;
 
 import com.lost.vcooking.item.ItemBase;
 import com.lost.vcooking.item.ItemBaseMeta;
+import com.lost.vcooking.item.ItemBaseMetaTool;
 import com.lost.vcooking.item.ItemBaseTool;
 import com.lost.vcooking.item.ItemFoodBase;
 
