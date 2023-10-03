@@ -13,7 +13,7 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 
 	private ArrayList<ItemFoodMeta> metaitems = Lists.newArrayList();
 	
-	public ItemFoodBaseMeta(String name, int amount, float saturation, boolean isWolfFood) {
+	public ItemFoodBaseMeta(String name) {
 		super(name, 0, 0, false);
 		// TODO Auto-generated constructor stub
 	}
