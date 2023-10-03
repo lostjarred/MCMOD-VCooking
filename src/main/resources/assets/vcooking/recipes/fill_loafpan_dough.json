@@ -2,7 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item":"vcooking:dough"
+			"type": "forge:ore_dict",
+			"ore": "itemDough"
 		},
 		{
 			"item":"vcooking:loafpan"
