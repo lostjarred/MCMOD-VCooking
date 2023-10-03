@@ -13,6 +13,11 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public ItemFoodBaseMeta addMetaFoodItem(String name, int foodvalue, int saturation) {
+		this.metaitems.add( new ItemFoodMeta(name, foodvalue, saturation) );
+		return this;
+	}
+	
 	
 	
 	class ItemFoodMeta {
