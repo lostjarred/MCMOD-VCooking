@@ -11,7 +11,7 @@ public class VCookingCreativeTab extends CreativeTabs {
 
 	@Override
 	public ItemStack createIcon() {
-		return new ItemStack(ModItems.DOUGH);
+		return new ItemStack(ModItems.ITEMS, 1, 0);
 	}
 
 }
