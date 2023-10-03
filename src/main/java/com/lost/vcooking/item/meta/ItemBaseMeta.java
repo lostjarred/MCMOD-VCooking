@@ -1,9 +1,10 @@
-package com.lost.vcooking.item;
+package com.lost.vcooking.item.meta;
 
 import java.util.ArrayList;
 
 import com.google.common.collect.Lists;
 import com.lost.vcooking.VCooking;
+import com.lost.vcooking.item.ItemBase;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;

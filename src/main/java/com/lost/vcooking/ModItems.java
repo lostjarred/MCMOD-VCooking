@@ -1,8 +1,8 @@
 package com.lost.vcooking;
 
-import com.lost.vcooking.item.ItemBaseMeta;
-import com.lost.vcooking.item.ItemBaseMetaTool;
-import com.lost.vcooking.item.ItemFoodBaseMeta;
+import com.lost.vcooking.item.meta.ItemBaseMeta;
+import com.lost.vcooking.item.meta.ItemBaseMetaTool;
+import com.lost.vcooking.item.meta.ItemFoodBaseMeta;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

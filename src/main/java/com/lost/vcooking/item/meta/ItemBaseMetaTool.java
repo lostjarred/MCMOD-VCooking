@@ -1,4 +1,4 @@
-package com.lost.vcooking.item;
+package com.lost.vcooking.item.meta;
 
 import net.minecraft.item.ItemStack;
 
