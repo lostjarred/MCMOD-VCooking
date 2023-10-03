@@ -9,8 +9,6 @@ import net.minecraftforge.registries.IForgeRegistryModifiable;
 public class RecipeHandler {
 		public static void registerSmeltingRecipes() {
 			System.out.println("Registering smelting recipes");
-			GameRegistry.addSmelting(ModItems.DOUGH, new ItemStack(ModItems.FLATBREAD), 0);
-			GameRegistry.addSmelting(ModItems.FILLED_LOAFPAN, new ItemStack(ModItems.FILLED_LOAFPAN_2), 0);
 			GameRegistry.addSmelting(new ItemStack(ModItems.ITEMS, 1 ,0), new ItemStack(ModItems.ITEMSFOOD, 1, 0), 0);
 			GameRegistry.addSmelting(new ItemStack(ModItems.ITEMS, 1 ,3), new ItemStack(ModItems.CONTAINERITEMS, 1, 0), 0);
 		}
