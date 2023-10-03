@@ -8,6 +8,7 @@ import com.lost.vcooking.item.ItemFoodBase;
 import com.lost.vcooking.item.ItemFoodBaseMeta;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModItems {
@@ -21,17 +22,18 @@ public class ModItems {
 	public static ItemBaseTool MIXING_BOWL = new ItemBaseTool("mixingbowl").setCreativeTab(VCooking.CREATIVETAB);
 	public static ItemBaseTool MORTAR_PESTILE = new ItemBaseTool("mortarpestile").setCreativeTab(VCooking.CREATIVETAB);
 	
+	public static ItemStack EMPTYLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 1);
 	
 	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(VCooking.CREATIVETAB)
 			.addMetaItem("flour")
 			.addMetaItem("loafpan")
 			.addMetaItem("dough")
 			.addMetaItem("filledloafpan")
-			.addMetaItem("filledloafpan2")
+			.addMetaItem("filledloafpan2", EMPTYLOAFPAN)
 			;
 	
 	public static ItemFoodBaseMeta ITEMSFOOD = new ItemFoodBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
-			.addMetaFoodItem("flatbread", 1, 1)
+			.addMetaFoodItem("flatbread", 3, 0.6f)
 			;
 	
 	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMetaTool("itemtools").setCreativeTab(VCooking.CREATIVETAB)
@@ -49,6 +51,7 @@ public class ModItems {
 		registry.register(MIXING_BOWL);
 		registry.register(FILLED_LOAFPAN_2);
 		registry.register(MORTAR_PESTILE);
+		System.out.println("registering meta items");
 		registry.register(ITEMS);
 		registry.register(ITEMSFOOD);
 		registry.register(ITEMSTOOL);
