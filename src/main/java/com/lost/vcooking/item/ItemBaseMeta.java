@@ -22,10 +22,10 @@ public class ItemBaseMeta extends ItemBase	{
 	public String getTranslationKey(ItemStack stack)
     {
 		int metadata = stack.getMetadata();
-		if (metadata > (metaitems.size() - 1) ) {
+		if (metadata > (this.metaitems.size() - 1) ) {
 			return name + ".error";
 		} else {
-			return name+ "." + metaitems.get(metadata).getName();
+			return name+ "." + this.metaitems.get(metadata).getName();
 		}
     }
 	
@@ -33,15 +33,15 @@ public class ItemBaseMeta extends ItemBase	{
     {
         if (this.isInCreativeTab(tab))
         {
-        	for (int i = 0; i < metaitems.size(); i ++) {
+        	for (int i = 0; i < this.metaitems.size(); i ++) {
         		items.add(new ItemStack(this, 1, i));
         	}
         }
     }
 	
 	public void registerItemModels() {
-		for (int i = 0; i < metaitems.size(); i ++) {
-			VCooking.proxy.registerItemRenderer(this, i, metaitems.get(i).getName());
+		for (int i = 0; i < this.metaitems.size(); i ++) {
+			VCooking.proxy.registerItemRenderer(this, i, this.metaitems.get(i).getName());
 		}
 	}
 	
