@@ -22,7 +22,7 @@ public class ModItems {
 	public static ItemBaseTool MIXING_BOWL = new ItemBaseTool("mixingbowl").setCreativeTab(VCooking.CREATIVETAB);
 	public static ItemBaseTool MORTAR_PESTILE = new ItemBaseTool("mortarpestile").setCreativeTab(VCooking.CREATIVETAB);
 	
-	public static ItemStack EMPTYLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 1);
+	
 	
 	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(VCooking.CREATIVETAB)
 			.addMetaItem("flour")
@@ -31,8 +31,10 @@ public class ModItems {
 			.addMetaItem("filledloafpan")
 			;
 	
+	public static ItemStack EMPTYLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 1);
+	
 	public static ItemBaseMeta CONTAINERITEMS = new ItemBaseMeta("containeritems").setCreativeTab(VCooking.CREATIVETAB)
-			.addMetaItem("filledloafpan2", new ItemStack(ITEMS, 1, 4))
+			.addMetaItem("filledloafpan2", EMPTYLOAFPAN)
 			;
 	
 	
