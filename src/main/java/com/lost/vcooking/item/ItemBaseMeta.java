@@ -71,13 +71,10 @@ public class ItemBaseMeta extends ItemBase	{
     {
         if (!this.hasContainerItem(itemStack))
         {
-        	System.out.println("no container item");
             return ItemStack.EMPTY;
         }
-        System.out.println("returning item");
         int metadata = itemStack.getMetadata();
-        ItemStack item = this.metaitems.get(metadata).getContainerItem();
-        System.out.println(item.toString());
+        ItemStack item = this.metaitems.get(metadata).getContainerItem().copy();
         return item;
     }
 	
