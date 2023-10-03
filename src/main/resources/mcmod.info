@@ -1,14 +1,14 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "vcooking",
+  "name": "Vaillia cooking",
+  "description": "Add food items based on vaillia items",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["CleanroomMC"],
-  "credits": "Authors of this project",
+  "authorList": ["Lostone1993"],
+  "credits": "Authors of this project, cleanroommc",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []
