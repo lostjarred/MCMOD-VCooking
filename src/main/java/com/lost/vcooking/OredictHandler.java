@@ -8,5 +8,6 @@ public class OredictHandler {
 		System.out.println("Registering Ore dicts");
 		OreDictionary.registerOre("itemFlour", ModItems.FLOUR);
 		OreDictionary.registerOre("itemFlour", new ItemStack(ModItems.ITEMS, 2) );
+		OreDictionary.registerOre("itemDough", new ItemStack(ModItems.ITEMS, 3) );
 	}
 }
