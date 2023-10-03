@@ -22,7 +22,7 @@ public class ItemBaseMeta extends ItemBase	{
 	public String getTranslationKey(ItemStack stack)
     {
 		int metadata = stack.getMetadata();
-		if (metadata > (this.metaitems.size() - 1) ) {
+		if (metadata > this.metaitems.size() ) {
 			return name + ".error";
 		} else {
 			return name+ "." + this.metaitems.get(metadata).getName();
@@ -51,6 +51,38 @@ public class ItemBaseMeta extends ItemBase	{
 		return this;
 	}
 	
+	@Override
+	public boolean hasContainerItem(ItemStack stack)
+    {
+		int metadata = stack.getMetadata();
+		if (metadata > this.metaitems.size()) {
+			return false;
+		} else {
+			if (this.metaitems.get(metadata).getContainerItem() == null) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+    }
+	
+	@Override
+	public ItemStack getContainerItem(ItemStack itemStack)
+    {
+        if (!this.hasContainerItem(itemStack))
+        {
+        	System.out.println("no container item");
+            return ItemStack.EMPTY;
+        }
+        System.out.println("returning item");
+        int metadata = itemStack.getMetadata();
+        ItemStack item = this.metaitems.get(metadata).getContainerItem();
+        System.out.println(item.toString());
+        return item;
+    }
+	
+	
+	//Meta item stuff
 	public ItemBaseMeta addMetaItem(String name) {
 		this.metaitems.add( new metaitem(name) );
 		return this;
@@ -67,6 +99,7 @@ public class ItemBaseMeta extends ItemBase	{
 		
 		public metaitem(String Name) {
 			this.itemName = Name;
+			this.containerItem = null;
 		}
 		
 		public metaitem(String Name, ItemStack containeritem) {
