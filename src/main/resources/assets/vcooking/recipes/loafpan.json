@@ -14,7 +14,8 @@
         }
     },
 	"result":{
-		"item":"vcooking:loafpan",
-		"count": 1
+		"item":"vcooking:items",
+		"count": 1,
+		"data": 1
 	}
 }

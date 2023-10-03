@@ -6,11 +6,13 @@
 			"ore": "itemDough"
 		},
 		{
-			"item":"vcooking:loafpan"
+			"item":"vcooking:items",
+			"data": 1
 		}
 	],
 	"result":{
-		"item":"vcooking:filledloafpan",
-		"count": 1
+		"item":"vcooking:items",
+		"count": 1,
+		"data": 3
 	}
 }

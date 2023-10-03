@@ -2,7 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item":"vcooking:filledloafpan_2"
+			"item":"vcooking:items",
+			"data": 4
 		}
 	],
 	"result":{

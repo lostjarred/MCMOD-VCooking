@@ -10,7 +10,8 @@
 		}
 	],
 	"result":{
-		"item":"vcooking:flour",
-		"count": 1
+		"item":"vcooking:items",
+		"count": 1,
+		"data": 0
 	}
 }
