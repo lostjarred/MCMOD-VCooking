@@ -58,13 +58,23 @@ public class ItemBaseMeta extends ItemBase	{
 	
 	class metaitem {
 		String itemName;
+		ItemStack containerItem;
 		
 		public metaitem(String Name) {
 			this.itemName = Name;
 		}
 		
+		public metaitem(String Name, ItemStack containeritem) {
+			this.itemName = Name;
+			this.containerItem = containeritem;
+		}
+		
 		public String getName() {
-			return itemName;
+			return this.itemName;
+		}
+		
+		public ItemStack getContainerItem() {
+			return this.containerItem;
 		}
 	}
 
