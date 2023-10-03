@@ -29,8 +29,12 @@ public class ModItems {
 			.addMetaItem("loafpan")
 			.addMetaItem("dough")
 			.addMetaItem("filledloafpan")
-			.addMetaItem("filledloafpan2", EMPTYLOAFPAN)
 			;
+	
+	public static ItemBaseMeta CONTAINERITEMS = new ItemBaseMeta("containeritems").setCreativeTab(VCooking.CREATIVETAB)
+			.addMetaItem("filledloafpan2", new ItemStack(ITEMS, 1, 4))
+			;
+	
 	
 	public static ItemFoodBaseMeta ITEMSFOOD = new ItemFoodBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
 			.addMetaFoodItem("flatbread", 3, 0.6f)
@@ -55,6 +59,7 @@ public class ModItems {
 		registry.register(ITEMS);
 		registry.register(ITEMSFOOD);
 		registry.register(ITEMSTOOL);
+		registry.register(CONTAINERITEMS);
 	}
 	
 	public static void registerModels() {
@@ -71,5 +76,6 @@ public class ModItems {
 		ITEMS.registerItemModels();
 		ITEMSFOOD.registerItemModels();
 		ITEMSTOOL.registerItemModels();
+		CONTAINERITEMS.registerItemModels();
 	}
 }
