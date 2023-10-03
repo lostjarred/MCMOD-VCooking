@@ -15,6 +15,16 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public String getTranslationKey(ItemStack stack)
+    {
+		int metadata = stack.getMetadata();
+		if (metadata > (metaitems.size() - 1) ) {
+			return name + ".error";
+		} else {
+			return name+ "." + metaitems.get(metadata).getName();
+		}
+    }
+	
 	
 	@Override
 	public int getHealAmount(ItemStack stack)
