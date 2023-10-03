@@ -52,6 +52,7 @@ public class ModItems {
 		registry.register(MORTAR_PESTILE);
 		registry.register(ITEMS);
 		registry.register(ITEMSFOOD);
+		registry.register(ITEMSTOOL);
 	}
 	
 	public static void registerModels() {
@@ -64,7 +65,9 @@ public class ModItems {
 		DOUGH.registerItemModel();
 		FILLED_LOAFPAN_2.registerItemModel();
 		MORTAR_PESTILE.registerItemModel();
+		System.out.println("registering meta item models");
 		ITEMS.registerItemModels();
 		ITEMSFOOD.registerItemModels();
+		ITEMSTOOL.registerItemModels();
 	}
 }
