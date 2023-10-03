@@ -44,6 +44,12 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 		}
 	}
 	
+	@Override
+	public ItemFoodBaseMeta setCreativeTab(CreativeTabs tab) {
+		super.setCreativeTab(tab);
+		return this;
+	}
+	
 	
 	@Override
 	public int getHealAmount(ItemStack stack)
