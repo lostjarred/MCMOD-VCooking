@@ -5,7 +5,8 @@
 			"item":"minecraft:wheat"
 		},
 		{
-			"item":"vcooking:mortarpestile"
+			"type": "forge:ore_dict",
+			"ore": "toolMortarPestile"
 		}
 	],
 	"result":{
