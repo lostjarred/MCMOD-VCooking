@@ -56,6 +56,11 @@ public class ItemBaseMeta extends ItemBase	{
 		return this;
 	}
 	
+	public ItemBaseMeta addMetaItem(String name, ItemStack containeritem) {
+		this.metaitems.add( new metaitem(name, containeritem) );
+		return this;
+	}
+	
 	class metaitem {
 		String itemName;
 		ItemStack containerItem;
