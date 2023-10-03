@@ -2,8 +2,8 @@
 	"type": "minecraft:crafting_shapeless",
 	"ingredients": [
 		{
-			"item":"vcooking:items",
-			"data": 4
+			"item":"vcooking:containeritems",
+			"data": 0
 		}
 	],
 	"result":{
