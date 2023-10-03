@@ -1,10 +1,10 @@
 #items
-item.flour.name=Wheat Flour
-item.flatbread.name=Flat Bread
-item.loafpan.name=Loaf Pan
-item.dough.name=Wheat Dough
-item.filledloafpan.name=Filled Loaf Pan
-item.mixingbowl.name=Mixing Bowl
-item.filledloafpan_2.name=Cooked Loaf Pan
-item.mortarpestile.name=Mortar and Pestile
+items.flour.name=Wheat Flour
+itemfoods.flatbread.name=Flat Bread
+items.loafpan.name=Loaf Pan
+items.dough.name=Wheat Dough
+items.filledloafpan.name=Filled Loaf Pan
+itemtools.mixingbowl.name=Mixing Bowl
+containeritems.filledloafpan2.name=Cooked Loaf Pan
+itemtools.mortarpestile.name=Mortar and Pestile
 #Creative Tabs
