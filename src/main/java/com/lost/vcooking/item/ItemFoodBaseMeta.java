@@ -67,7 +67,7 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 	@Override
     public float getSaturationModifier(ItemStack stack)
     {
-		int satvalue = 0;
+		float satvalue = 0;
 		int metadata = stack.getMetadata();
 		
 		if ( metadata > this.metaitems.size() ) {
@@ -79,7 +79,7 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
     }
 	
 	//meta food item class stuff
-	public ItemFoodBaseMeta addMetaFoodItem(String name, int foodvalue, int saturation) {
+	public ItemFoodBaseMeta addMetaFoodItem(String name, int foodvalue, float saturation) {
 		this.metaitems.add( new ItemFoodMeta(name, foodvalue, saturation) );
 		return this;
 	}
@@ -87,9 +87,9 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 	class ItemFoodMeta {
 		String name;
 		int foodvalue;
-		int saturation;
+		float saturation;
 		
-		ItemFoodMeta(String itemname, int itemfoodvalue, int itemsaturation){
+		ItemFoodMeta(String itemname, int itemfoodvalue, float itemsaturation){
 			this.name = itemname;
 			this.foodvalue = itemfoodvalue;
 			this.saturation = itemsaturation;
@@ -103,7 +103,7 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 			return this.foodvalue;
 		}
 		
-		public int getSaturation() {
+		public float getSaturation() {
 			return this.saturation;
 		}
 	}
