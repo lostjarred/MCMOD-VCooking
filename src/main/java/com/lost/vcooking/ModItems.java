@@ -7,7 +7,6 @@ import com.lost.vcooking.item.ItemBaseTool;
 import com.lost.vcooking.item.ItemFoodBase;
 import com.lost.vcooking.item.ItemFoodBaseMeta;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 

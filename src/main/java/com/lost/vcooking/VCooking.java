@@ -2,7 +2,6 @@ package com.lost.vcooking;
 
 import com.lost.vcooking.proxy.CommonProxy;
 
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
