@@ -4,7 +4,9 @@ import java.util.ArrayList;
 
 import com.google.common.collect.Lists;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 
 public class ItemFoodBaseMeta extends ItemFoodBase {
 
@@ -23,6 +25,16 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 		} else {
 			return name+ "." + metaitems.get(metadata).getName();
 		}
+    }
+	
+	public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> items)
+    {
+        if (this.isInCreativeTab(tab))
+        {
+        	for (int i = 0; i < metaitems.size(); i ++) {
+        		items.add(new ItemStack(this, 1, i));
+        	}
+        }
     }
 	
 	
