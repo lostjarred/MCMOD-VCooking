@@ -11,7 +11,7 @@ import net.minecraft.util.NonNullList;
 
 public class ItemBaseMeta extends ItemBase	{
 	
-	private static ArrayList<metaitem> metaitems = Lists.newArrayList();
+	private ArrayList<metaitem> metaitems = Lists.newArrayList();
 
 	public ItemBaseMeta(String name) {
 		super(name);
@@ -52,7 +52,7 @@ public class ItemBaseMeta extends ItemBase	{
 	}
 	
 	public ItemBaseMeta addMetaItem(String name) {
-		metaitems.add( new metaitem(name) );
+		this.metaitems.add( new metaitem(name) );
 		return this;
 	}
 	
