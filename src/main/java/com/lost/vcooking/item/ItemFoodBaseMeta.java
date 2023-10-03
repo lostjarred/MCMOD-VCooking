@@ -3,6 +3,7 @@ package com.lost.vcooking.item;
 import java.util.ArrayList;
 
 import com.google.common.collect.Lists;
+import com.lost.vcooking.VCooking;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
@@ -36,6 +37,12 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
         	}
         }
     }
+	
+	public void registerItemModels() {
+		for (int i = 0; i < metaitems.size(); i ++) {
+			VCooking.proxy.registerItemRenderer(this, i, metaitems.get(i).getName());
+		}
+	}
 	
 	
 	@Override
