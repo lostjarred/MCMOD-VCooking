@@ -6,7 +6,8 @@
 			"ore": "itemFlour"
 		},
 		{
-			"item":"vcooking:mixingbowl"
+			"type": "forge:ore_dict",
+			"ore": "toolMixingBowl"
 		},
 		{
 			"item":"minecraft:water_bucket"
