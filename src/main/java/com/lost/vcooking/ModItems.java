@@ -5,6 +5,7 @@ import com.lost.vcooking.item.ItemBaseMeta;
 import com.lost.vcooking.item.ItemBaseMetaTool;
 import com.lost.vcooking.item.ItemBaseTool;
 import com.lost.vcooking.item.ItemFoodBase;
+import com.lost.vcooking.item.ItemFoodBaseMeta;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -30,8 +31,8 @@ public class ModItems {
 			.addMetaItem("filledloafpan2")
 			;
 	
-	public static ItemBaseMeta ITEMSFOOD = new ItemBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
-			.addMetaItem("flatbread")
+	public static ItemFoodBaseMeta ITEMSFOOD = new ItemFoodBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
+			.addMetaFoodItem("flatbread", 1, 1)
 			;
 	
 	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMetaTool("itemtools").setCreativeTab(VCooking.CREATIVETAB)
@@ -50,6 +51,7 @@ public class ModItems {
 		registry.register(FILLED_LOAFPAN_2);
 		registry.register(MORTAR_PESTILE);
 		registry.register(ITEMS);
+		registry.register(ITEMSFOOD);
 	}
 	
 	public static void registerModels() {
@@ -63,5 +65,6 @@ public class ModItems {
 		FILLED_LOAFPAN_2.registerItemModel();
 		MORTAR_PESTILE.registerItemModel();
 		ITEMS.registerItemModels();
+		ITEMSFOOD.registerItemModels();
 	}
 }
