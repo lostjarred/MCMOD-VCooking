@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import com.google.common.collect.Lists;
 
+import net.minecraft.item.ItemStack;
+
 public class ItemFoodBaseMeta extends ItemFoodBase {
 
 	private ArrayList<ItemFoodMeta> metaitems = Lists.newArrayList();
@@ -13,12 +15,39 @@ public class ItemFoodBaseMeta extends ItemFoodBase {
 		// TODO Auto-generated constructor stub
 	}
 	
+	
+	@Override
+	public int getHealAmount(ItemStack stack)
+    {
+		int foodvalue = 0;
+        int metadata = stack.getMetadata();
+        if ( metadata > this.metaitems.size() ) {
+        	return foodvalue;
+        } else {
+        	foodvalue = this.metaitems.get(metadata).getFoodValue();
+        	return foodvalue;
+        }
+    }
+	
+	@Override
+    public float getSaturationModifier(ItemStack stack)
+    {
+		int satvalue = 0;
+		int metadata = stack.getMetadata();
+		
+		if ( metadata > this.metaitems.size() ) {
+        	return satvalue;
+        } else {
+        	satvalue = this.metaitems.get(metadata).getSaturation();
+        	return satvalue;
+        }
+    }
+	
+	//meta food item class stuff
 	public ItemFoodBaseMeta addMetaFoodItem(String name, int foodvalue, int saturation) {
 		this.metaitems.add( new ItemFoodMeta(name, foodvalue, saturation) );
 		return this;
 	}
-	
-	
 	
 	class ItemFoodMeta {
 		String name;
