@@ -1,0 +1,31 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern":
+    [
+		"  s",
+        "pfp",
+        " p "
+    ],
+    "key":
+    {
+        "p":
+        {
+            "type": "forge:ore_dict",
+            "ore": "stone"
+        },
+		"s":
+        {
+            "type": "forge:ore_dict",
+            "ore": "stickWood"
+        },
+		"f":
+		{
+			"item":"minecraft:flint"
+		}
+    },
+	"result":{
+		"item":"vcooking:itemtools",
+		"count": 1,
+		"data": 1
+	}
+}
