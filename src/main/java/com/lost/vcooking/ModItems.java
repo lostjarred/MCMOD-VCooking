@@ -10,28 +10,35 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModItems {
 	
-	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(VCooking.CREATIVETAB)
-			.addMetaItem("flour")
+	public static ItemBaseMeta ITEMCONTAINERS = new ItemBaseMeta("itemcontainers").setCreativeTab(VCooking.CREATIVETAB)
 			.addMetaItem("loafpan")
-			.addMetaItem("dough")
-			.addMetaItem("filledloafpan")
 			;
 	
-	public static ItemStack EMPTYLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 1);
+	public static ItemStack EMPTYLOAFPAN = new ItemStack(ModItems.ITEMCONTAINERS, 1, 0);
 	
-	public static ItemBaseMeta CONTAINERITEMS = new ItemBaseMeta("containeritems").setCreativeTab(VCooking.CREATIVETAB)
+	public static ItemBaseMeta ITEMS = new ItemBaseMeta("items").setCreativeTab(VCooking.CREATIVETAB)
+			.addMetaItem("flour")
+			.addMetaItem("dough")
+			.addMetaItem("filledloafpan")
 			.addMetaItem("filledloafpan2", EMPTYLOAFPAN)
 			;
 	
+	public static ItemStack FILLEDLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 2);
+	public static ItemStack COOKEDLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 3);
+	public static ItemStack DOUGH = new ItemStack(ModItems.ITEMS, 1, 1);
 	
 	public static ItemFoodBaseMeta ITEMSFOOD = new ItemFoodBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
 			.addMetaFoodItem("flatbread", 3, 0.6f)
 			;
 	
+	public static ItemStack FLATBREAD = new ItemStack(ModItems.ITEMSFOOD, 1, 0);
+	
 	public static ItemBaseMeta ITEMSTOOL = new ItemBaseMetaTool("itemtools").setCreativeTab(VCooking.CREATIVETAB)
 			.addMetaItem("mixingbowl")
 			.addMetaItem("mortarpestile")
 			;
+	
+	
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		System.out.println("registering items");
@@ -39,7 +46,7 @@ public class ModItems {
 		registry.register(ITEMS);
 		registry.register(ITEMSFOOD);
 		registry.register(ITEMSTOOL);
-		registry.register(CONTAINERITEMS);
+		registry.register(ITEMCONTAINERS);
 	}
 	
 	public static void registerModels() {
@@ -48,6 +55,6 @@ public class ModItems {
 		ITEMS.registerItemModels();
 		ITEMSFOOD.registerItemModels();
 		ITEMSTOOL.registerItemModels();
-		CONTAINERITEMS.registerItemModels();
+		ITEMCONTAINERS.registerItemModels();
 	}
 }

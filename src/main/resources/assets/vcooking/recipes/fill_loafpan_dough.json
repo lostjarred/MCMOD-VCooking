@@ -6,13 +6,13 @@
 			"ore": "itemDough"
 		},
 		{
-			"item":"vcooking:items",
-			"data": 1
+			"item":"vcooking:itemcontainers",
+			"data": 0
 		}
 	],
 	"result":{
 		"item":"vcooking:items",
 		"count": 1,
-		"data": 3
+		"data": 2
 	}
 }
