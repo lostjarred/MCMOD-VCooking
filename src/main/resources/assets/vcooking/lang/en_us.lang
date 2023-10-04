@@ -1,10 +1,10 @@
 #items
 items.flour.name=Wheat Flour
-items.loafpan.name=Loaf Pan
+items.filledloafpan2.name=Cooked Loaf Pan
 items.dough.name=Wheat Dough
 items.filledloafpan.name=Filled Loaf Pan
 
-containeritems.filledloafpan2.name=Cooked Loaf Pan
+itemcontainers.loafpan.name=Loaf Pan
 
 itemfoods.flatbread.name=Flat Bread
 
