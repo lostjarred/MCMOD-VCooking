@@ -26,6 +26,7 @@ public class ModItems {
 	public static ItemStack FILLEDLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 2);
 	public static ItemStack COOKEDLOAFPAN = new ItemStack(ModItems.ITEMS, 1, 3);
 	public static ItemStack DOUGH = new ItemStack(ModItems.ITEMS, 1, 1);
+	public static ItemStack FLOUR = new ItemStack(ModItems.ITEMS, 1, 0);
 	
 	public static ItemFoodBaseMeta ITEMSFOOD = new ItemFoodBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
 			.addMetaFoodItem("flatbread", 3, 0.6f)
