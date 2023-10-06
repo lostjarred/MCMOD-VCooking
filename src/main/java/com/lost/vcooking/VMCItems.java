@@ -8,9 +8,9 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class VMCItems {
 	private static String modname = "minecraft";
 	
-	public static final Item BREAD_OVERIDE = new ItemFood(6, 0.6f, false).setTranslationKey("bread").setRegistryName(modname, "bread");
 	public static final Item MUSHROOM_STEW_OVERRIDE = new ItemSoup(6).setTranslationKey("mushroomStew").setRegistryName(modname, "mushroom_stew");
-	
+	public static final Item BREAD_OVERIDE = new ItemFood(6, 0.6f, false).setTranslationKey("bread").setRegistryName(modname, "bread");
+	public static final Item PORKCHOP = new ItemFood(3, 0.3f, false).setTranslationKey("porkchopRaw").setRegistryName(modname, "porkchop");
 	
 	public static void register_Overide(IForgeRegistry<Item> registry) {
 		System.out.println("registering Minecraft Item Overrides");
