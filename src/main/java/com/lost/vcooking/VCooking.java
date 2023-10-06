@@ -50,6 +50,7 @@ public class VCooking {
 		@SubscribeEvent
 		public static void registerItems(RegistryEvent.Register<Item> event) {
 			ModItems.register(event.getRegistry());
+			VMCItems.register_Overide(event.getRegistry());
 		}
 		
 		@SubscribeEvent
