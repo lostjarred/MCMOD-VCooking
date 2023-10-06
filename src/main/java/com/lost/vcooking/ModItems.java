@@ -29,7 +29,7 @@ public class ModItems {
 	public static ItemStack FLOUR = new ItemStack(ModItems.ITEMS, 1, 0);
 	
 	public static ItemFoodBaseMeta ITEMSFOOD = new ItemFoodBaseMeta("itemfoods").setCreativeTab(VCooking.CREATIVETAB)
-			.addMetaFoodItem("flatbread", 3, 0.6f)
+			.addMetaFoodItem("flatbread", 4, 0.6f)
 			;
 	
 	public static ItemStack FLATBREAD = new ItemStack(ModItems.ITEMSFOOD, 1, 0);
