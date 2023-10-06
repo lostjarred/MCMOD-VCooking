@@ -13,7 +13,10 @@ public class VMCItems {
 	public static final Item PORKCHOP = new ItemFood(3, 0.3f, true).setTranslationKey("porkchopRaw").setRegistryName(modname, "porkchop");
 	
 	public static final Item COOKED_PORKSCHOP = new ItemFood(8, 0.8f, true).setTranslationKey("porkchopCooked").setRegistryName(modname, "cooked_porkchop");
-	
+	//TODO
+	public static final Item FISH = new Item();
+	public static final Item FISH_COOKED = new Item();
+	//
 	
 	public static void register_Overide(IForgeRegistry<Item> registry) {
 		System.out.println("registering Minecraft Item Overrides");
