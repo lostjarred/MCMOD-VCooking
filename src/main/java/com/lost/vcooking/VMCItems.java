@@ -20,7 +20,8 @@ public class VMCItems {
 	//
 	
 	public static final Item COOKIE_OVERIDE = new ItemFood(2, 0.1f, false).setTranslationKey("cookie").setRegistryName(modname, "cookie");
-	public static final Item MELON_OVERIDE = new ItemFood(0, 0, false).setTranslationKey("melon").setRegistryName(modname, "melon");
+	public static final Item MELON_OVERIDE = new ItemFood(2, 0.3f, false).setTranslationKey("melon").setRegistryName(modname, "melon");
+	public static final Item BEEF_OVERIDE = new ItemFood(3, 0.3f, true).setTranslationKey("beef").setRegistryName(modname, "beefRaw");
 	
 	public static void register_Overide(IForgeRegistry<Item> registry) {
 		System.out.println("registering Minecraft Item Overrides");
