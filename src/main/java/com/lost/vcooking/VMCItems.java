@@ -27,7 +27,7 @@ public class VMCItems {
 	public static final Item BEEF_OVERIDE = new ItemFood(3, 0.3f, true).setTranslationKey("beef").setRegistryName(modname, "beefRaw");
 	
 	public static final Item COOKED_BEEF_OVERIDE = new ItemFood(8, 0.8f, true).setTranslationKey("beefcooked").setRegistryName(modname, "cooked_beef");
-	public static final Item CHIECKEN_OVERIDE = new ItemFood(2, 0.3f, true).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3f).setTranslationKey("chickenRaw").setRegistryName(modname, "chicken");
+	public static final Item CHIECKEN_OVERIDE = new ItemFood(2, 0.3f, true).setPotionEffect(food_poisoning, 0.3f).setTranslationKey("chickenRaw").setRegistryName(modname, "chicken");
 	public static final Item COOKED_CHICKEN_OVERIDE = new ItemFood(6, 0.6f, true).setTranslationKey("chickenCooked").setRegistryName(modname, "chickenCooked");
 	
 	public static final Item ROTTEN_FLESH_OVERIDE = new ItemFood(4, 0.1f,true).setPotionEffect(food_poisoning, 0.8f).setTranslationKey("rottenFlesh").setRegistryName(modname, "rotten_flesh");
