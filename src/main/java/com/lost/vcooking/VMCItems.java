@@ -9,6 +9,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class VMCItems {
 	private static String modname = "minecraft";
+	private static PotionEffect food_poisoning = new PotionEffect(MobEffects.HUNGER, 600, 0);
 	
 	public static final Item MUSHROOM_STEW_OVERRIDE = new ItemSoup(6).setTranslationKey("mushroomStew").setRegistryName(modname, "mushroom_stew");
 	public static final Item BREAD_OVERIDE = new ItemFood(6, 0.6f, false).setTranslationKey("bread").setRegistryName(modname, "bread");
@@ -28,7 +29,6 @@ public class VMCItems {
 	public static final Item COOKED_BEEF_OVERIDE = new ItemFood(8, 0.8f, true).setTranslationKey("beefcooked").setRegistryName(modname, "cooked_beef");
 	public static final Item CHIECKEN_OVERIDE = new ItemFood(2, 0.3f, true).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3f).setTranslationKey("chickenRaw").setRegistryName(modname, "chicken");
 	public static final Item COOKED_CHICKEN_OVERIDE = new ItemFood(6, 0.6f, true).setTranslationKey("chickenCooked").setRegistryName(modname, "chickenCooked");
-	
 	
 	
 	
