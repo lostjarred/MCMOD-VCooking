@@ -27,6 +27,10 @@ public class VMCItems {
 	
 	public static final Item COOKED_BEEF_OVERIDE = new ItemFood(8, 0.8f, true).setTranslationKey("beefcooked").setRegistryName(modname, "cooked_beef");
 	public static final Item CHIECKEN_OVERIDE = new ItemFood(2, 0.3f, true).setPotionEffect(new PotionEffect(MobEffects.HUNGER, 600, 0), 0.3f).setTranslationKey("chickenRaw").setRegistryName(modname, "chicken");
+	public static final Item COOKED_CHICKEN_OVERIDE = new ItemFood(6, 0.6f, true).setTranslationKey("chickenCooked").setRegistryName(modname, "chickenCooked");
+	
+	
+	
 	
 	public static void register_Overide(IForgeRegistry<Item> registry) {
 		System.out.println("registering Minecraft Item Overrides");
