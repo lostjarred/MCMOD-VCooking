@@ -14,8 +14,8 @@
         }
     },
 	"result":{
-		"item":"vcooking:items",
+		"item":"vcooking:ITEMCONTAINERS",
 		"count": 1,
-		"data": 1
+		"data": 0
 	}
 }
