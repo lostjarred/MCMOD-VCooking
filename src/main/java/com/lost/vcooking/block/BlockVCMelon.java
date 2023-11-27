@@ -20,4 +20,9 @@ public class BlockVCMelon extends BlockMelon {
 		super.blockSoundType = SoundType.WOOD;
 		return this;
 	}
+	
+	@Override
+	public int quantityDropped(Random random) {
+		return 1;
+	}
 }
