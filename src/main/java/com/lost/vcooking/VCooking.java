@@ -2,6 +2,7 @@ package com.lost.vcooking;
 
 import com.lost.vcooking.proxy.CommonProxy;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -51,6 +52,11 @@ public class VCooking {
 		public static void registerItems(RegistryEvent.Register<Item> event) {
 			ModItems.register(event.getRegistry());
 			VMCItems.register_Overide(event.getRegistry());
+		}
+		
+		@SubscribeEvent
+		public static void registerBlocks(RegistryEvent.Register<Block> event) {
+			VMCBlocks.register_overrides(event.getRegistry());
 		}
 		
 		@SubscribeEvent
